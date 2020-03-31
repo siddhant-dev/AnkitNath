@@ -1,0 +1,137 @@
+<div class="container">
+    <br>    
+    <div class="head">
+        About Me
+    </div>
+    <div class="bit">
+        
+    I am Ankit Nath, a result-oriented engineer with fast learning attitude and experience in analysis development 
+    testing and implementation of different industrial systems. Adept at developing and building applications with 
+    usability and high performance in mind.
+    </div>
+    <br>
+    
+
+    <div class="sub-head">
+        My Projects
+    </div>
+    <p class="sub-head">
+        01. Drone-Limpio
+    </p>
+    <div class="details">
+        <div>
+        <carousel>
+          <ng-container *ngFor="let item of drone;">
+            <ng-container *carouselItem>
+             <img [src]=item.title alt="" class="item">
+            </ng-container>
+          </ng-container>
+        </carousel>
+        </div>
+        <div class="drone">
+            <p>
+                I worked on this project while I was an R & D Intern in HEMAV, which involved analysis of 
+                project feasibility with the application of UAV's for cleaning windows and industrial warehouses. 
+                I was involved in developing the project from scratch, component and instrument selection, integration 
+                of sensors and different payloads such as gimbals, camera, air blower, sprinkler system, battery/cable 
+                operated, creation of 3 different models depending on payload selection and cost analysis . 
+                I was involved in programming Raspberry Pi based on-board computer to be used on the UAV.
+            </p>
+        </div>
+    </div>
+    <p class="sub-head">
+        02. REEN
+    </p>
+    <div class="details">
+        <div class="reen">
+            <p>
+                I worked on this project while I was an Electronics Intern in Aureel. 
+                The project that is our main concern is - REEN , which is intended to assist runners in these training activities, 
+                advising them about their rhythm and speed with a projected lighting system on the ground ahead of the runners 
+                (see image), without need to look at screens or devices. Projected information is sent including simple messages 
+                for runners to accelerate or decelerate, change pace, etc. I was responsible for testing, calibration and optimization 
+                of the performance and efficiency of the electronic equipment, configuring the GPS tracker and integrating it with the
+                 Arduino Uno for establishing maximum satellite connections.
+            </p>
+        </div>
+            <div>
+            <carousel>
+              <ng-container *ngFor="let item of reen;">
+                <ng-container *carouselItem>
+                 <img [src]=item.title alt="" class="item">
+                </ng-container>
+              </ng-container>
+            </carousel>
+            </div>
+    </div>
+    <p class="sub-head">
+        03. Thermal Cycling test of Raspberry Pi camera for space environment
+    </p>
+    <div class="details">
+        <div>
+            <br>
+        <carousel>
+          <ng-container *ngFor="let item of pi;">
+            <ng-container *carouselItem>
+             <img [src]=item.title alt="" class="item">
+            </ng-container>
+          </ng-container>
+        </carousel>
+        </div>
+        <div class="drone">
+            <p>
+                I was involved in this project while I was working at Aalto University on FORESAIL 1 mission. The thermal testing 
+                of the camera was carried out for verifying its reliability in a space environment. Extreme temperature ranges 
+                creates stress that affects the behavior and lifetime of the components. The problems that can be caused by 
+                temperature swings are : </p>
+               <ul>
+                   <li> Delayed image capture of the RPI Cam </li>
+                    <li>Changes in electrical behavior</li>
+               </ul>
+               <p>
+                 The Raspberry Pi camera was tested in two temperature ranges using the thermal cycling test chamber. 
+                 The first test was made in the temperature range : -20℃ to +60℃ , while the second test was made in the temperature 
+                 range : -40℃ to +80℃. The Raspberry Pi camera was supplied 5V using the dual power supply by Agilent 34970A and 
+                 the respective current consumption of the RPI Cam was measured during operation.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="sub-head">
+        My Skills
+    </div>
+    <p class="text"> 
+        I have experience in programming ARM based microcontrollers such as TI MSP430, STM32, 
+        along with communication protocols- SPI, I2C,Serial, CAN. 
+        I also have knowledge of calloc, malloc, dynamic memory allocation, Interrupt service routine (ISR), Interrupt Handling, TCP/IP
+        Familiarity with oscilloscopes,HW debugger.
+    </p>
+    <div class="skills">
+          
+
+           <div class="tools">
+                <div class="sub-head">
+                    Simulation Tools
+                   
+                </div>
+                <ul>
+                    <li *ngFor="let i of simulation">{{i}}</li>
+                </ul>
+           </div>
+           <div class="lang">
+               <div class="sub-head">
+                   Programming Languages
+                   
+               </div>
+               <ul>
+                <li *ngFor="let i of lang">{{i}}</li>
+            </ul>
+
+           </div>
+    </div>
+    
+    
+    
+   
+
+</div>

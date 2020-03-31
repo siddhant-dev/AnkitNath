@@ -1,0 +1,15 @@
+<section class="carousel-wrapper" [ngStyle]="carouselWrapperStyle">
+    <ul class="carousel-inner" #carousel>
+      <li *ngFor="let item of items;" class="carousel-item">
+        <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+      </li>
+    </ul>
+  </section>
+  <div *ngIf="showControls" class="arrows">
+    <i class="material-icons" (click)="prev()" [ngClass]="{'dis': disablePrev}">
+        skip_previous
+      </i>
+      <i class="material-icons" (click)="next()" [ngClass]="{'dis': disableNext}">
+        skip_next
+      </i>
+  </div>

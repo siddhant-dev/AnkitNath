@@ -1,0 +1,102 @@
+.container{
+    margin: 0 5rem 0 5rem;
+    color: var(--text-secondary);
+}
+
+.item{
+    width: 512px;
+    height: 300px;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--text-secondary);
+    font-size: 4rem;
+}
+
+.bit{
+    display: flex;
+    justify-self: flex-start;
+    text-align: justify;    
+    
+}
+
+.sub-head{
+    color: var(--text-secondary);
+    font-size: 3rem;
+}
+
+.text{
+    text-align: justify;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tools .sub-head, .lang .sub-head{
+    font-size: 2rem;
+}
+p.sub-head{
+    font-size: 2rem;
+}
+
+ul{
+    font-size: 1rem;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+.drone, .reen, .pi{
+    text-align: justify;
+}
+.drone{
+    margin-left: 3rem;
+}
+.reen{
+    margin-right: 3rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 1rem 2rem 0 2rem;
+    }
+    .head{
+        font-size: 2.5rem;
+    }
+    .sub-head{
+        font-size: 1.5rem;
+    }
+
+    .tools .sub-head, .lang .sub-head{
+        font-size: 1.5rem;
+    }
+    .skills{
+        flex-direction: column;
+    }
+
+    .item{
+        height: 200px;
+        width: 350px;
+    }
+
+    .details{
+        flex-direction: column;
+        justify-content: center ;
+    }
+
+    .drone, .reen{
+        margin: 0;
+    }
+
+    p.sub-head{
+        font-size: 1.2rem;
+    }
+
+}
