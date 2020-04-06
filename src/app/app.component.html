@@ -54,9 +54,9 @@
       </a>
   </li>
     <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a routerLink="/contact" class="nav-link">
           <span class="link-text">Contact Me</span>
-          <span class="material-icons fa-primary    ">
+          <span class="material-icons fa-primary">
             alternate_email
             </span>
         </a>
@@ -67,8 +67,8 @@
     </ul>
   </nav>
 
-<main>
+<main [@routeAnimations]="prepareRoute(outlet)" >
 
   
-  <router-outlet></router-outlet>
+  <router-outlet #outlet="outlet"></router-outlet>
 </main>

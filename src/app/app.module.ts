@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { CarouselComponent, CarouselItemElement } from './carousel/carousel.component';
 import { CarouselItemDirective } from './carousel-item.directive';
 import { WorkComponent } from './work/work.component';
+import { ContactComponent } from './contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { WorkComponent } from './work/work.component';
     CarouselComponent, CarouselItemElement,
     CarouselItemDirective,
     WorkComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

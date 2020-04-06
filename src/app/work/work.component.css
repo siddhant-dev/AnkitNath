@@ -2,3 +2,23 @@
     margin: 0 5rem 0 5rem;
     color: var(--text-secondary);
 }
+
+.work-head{
+    margin-top: 4rem;
+}
+
+.work-head h2{
+    line-height: 0rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 1rem 2rem 0 2rem;
+    }
+    ul, .work-head{
+        text-align: justify;
+    }
+    .work-head h2{
+        line-height: normal;
+    }
+}
