@@ -14,11 +14,11 @@
   }
   
   body::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: #2b6bbe;
   }
   
   body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #2c84ad;
   }
 
   html,body { 

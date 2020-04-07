@@ -11,9 +11,24 @@
     line-height: 0rem;
 }
 
+.button {
+    background-color: #35BAE3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: rgb(20, 107, 136);
+  }
+
 @media only screen and (max-width: 600px) {
     .container {
-        margin: 1rem 2rem 0 2rem;
+        margin: 1rem 2rem 7rem 2rem;
     }
     ul, .work-head{
         text-align: justify;

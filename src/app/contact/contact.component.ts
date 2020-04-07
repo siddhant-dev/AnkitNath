@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faFacebookSquare, faInstagram, faLinkedin, faGithubSquare  } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram, faLinkedin, faGithubSquare, faSkype  } from '@fortawesome/free-brands-svg-icons';
 import { Contact } from './contact';
 import { SendEmailService } from '../send-email.service';
 
@@ -9,6 +9,7 @@ import { SendEmailService } from '../send-email.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  skype = faSkype;
   fb = faFacebookSquare;
   insta = faInstagram;
   linkedIn = faLinkedin;
