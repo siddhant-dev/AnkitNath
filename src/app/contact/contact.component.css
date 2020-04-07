@@ -55,7 +55,7 @@ a{
     text-decoration: underline;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -78,27 +78,42 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #35BAE3;
+    background-color: rgb(20, 107, 136);
+  }
+
+  input[type=submit]:disabled{
+      background-color: silver;
   }
   
   .form-container {
       display: flex;
-      padding: 0 10rem 0 10rem;
+      margin: 0 4rem;
+      padding-bottom: 2rem;
       flex-direction: column;
       justify-content: center;  
-    border-radius: 5px;
+      align-items: center;
+      border-radius: 0.5rem;
+      background-color: snow;
+      color: black;
   }
 
-  @media only screen and (max-width: 600px) {
+  .invalid{
+      font-size: 1rem;
+      color: red;
+      text-align: right;
+  }
+
+  @media only screen and (max-width: 758px) {
 
     .connect{
-        margin-top: 0;
+        margin-top: 0;  
     }
     .social{
         font-size: 3rem;
     }
     .form-container{
-        padding: 0;
+        padding: 1.2rem;
+        margin:0;
     }
 
     .container{
